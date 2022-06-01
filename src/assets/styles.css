@@ -1,0 +1,333 @@
+.loginContainer{
+    position: relative; 
+    width: 1440px; 
+    height: 1024px; 
+    background: #FFFFFF;
+}
+
+.sideLoginContainer{
+    position: relative;
+    width: 732px; 
+    height: 1024px;
+    left: 0px; 
+    top: 0px; 
+    background: #F7F7FD;
+}
+
+.welcomeHeade{
+    position: absolute;
+    width: 111px;
+    height: 19px;
+    left: 839px;
+    top: 185px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6F6F6F;
+}
+
+.companyName{
+    position: absolute;
+    width: 550px;
+    height: 29px;
+    left: 839px;
+    top: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #360A3B;
+}
+
+.emailContainer{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 0px; 
+    position: absolute; 
+    width: 403px; 
+    height: 88px; 
+    left: 839px; 
+    top: 269px;
+}
+
+.emailLabel{
+    position: static;
+    width: 36px;
+    height: 17px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000929;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.emailField{
+    position: static;
+    width: 403px;
+    height: 61px;
+    left: 0px;
+    top: 27px;
+    background: #F7F7FD;
+    border-radius: 6px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 0px;
+    border: none !important;
+}
+
+.passwordContainer{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 0px; 
+    position: absolute; 
+    width: 403px; 
+    height: 88px; 
+    left: 839px; 
+    top: 390px;
+}
+
+.passwordLabel{
+    position: static;
+    width: 66px;
+    height: 17px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000929;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.passwordField{
+    position: static;
+    width: 403px;
+    height: 61px;
+    left: 0px;
+    top: 27px;
+    background: #F7F7FD;
+    border-radius: 6px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 0px;
+    border: none !important;
+}
+
+.forgetPasswordLink{
+    position: absolute;
+    width: 111px;
+    height: 16px;
+    left: 1131px;
+    top: 490px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B247BE;
+}
+
+.sideImage{
+    position: absolute;
+    width: 732px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    background: url('Frame 8.png');
+}
+
+.loginButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: absolute;
+    width: 403px;
+    height: 49px;
+    left: 839px;
+    top: 529px;
+    background: #360A3B;
+    border-radius: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none !important;
+}
+
+.dashboardFrame{
+    position: relative;
+    width: 1440px;
+    height: 916px;
+    background: #FFFFFF;
+}
+
+.dashLeftSideFrame{
+    position: absolute;
+    width: 246px;
+    height: 916px;
+    left: 0px;
+    top: 0px;
+}
+
+.dashRightSideFrame{
+    position: absolute;
+    width: 1194px;
+    height: 916px;
+    left: 246px;
+    top: 0px;
+    background: #F7F7FD;
+    border-radius: 25px 0px 0px 0px;
+}
+
+.dashLogo{
+    position: absolute;
+    width: 105px;
+    height: 56.89px;
+    left: 65px;
+    top: 28px;
+    background: url('WhatsApp\ Image\ 2022-05-02\ at\ 5.15\ 1.png');
+    border-image: none !important;
+    border: none !important;
+}
+
+.dashInnerFrame{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 60px;
+    position: absolute;
+    width: 174px;
+    height: 444px;
+    left: 45px;
+    top: 220px;
+}
+
+.dashTitle{
+    position: absolute;
+    width: 211px;
+    height: 60px;
+    left: 0px;
+    top: 130px;
+    background: #360A3B;
+    border-radius: 0px 6px 6px 0px;
+    text-align: center;
+    border: none !important;
+}
+
+.dashTitleLabel{
+    width: 84px;
+    height: 19px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 19px;
+    color:#FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 20px 52px;
+}
+
+.dashMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 174px;
+    height: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.textMenu{
+    width: 140px;
+    height: 8px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9295A6;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    text-decoration: none;
+}
+
+.dashRightSideTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+    position: absolute;
+    width: 67px;
+    height: 16px;
+    left: 50px;
+    top: 38px;
+}
+
+.dashRightSideTitleLabel{
+    width: 67px;
+    height: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #6F6F6F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.dashCompanyName{
+    width: 160px;
+    height: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #4F4F4F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding-left: 700px;
+}
+
+
+
