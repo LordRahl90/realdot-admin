@@ -6,11 +6,11 @@
             </div>
 
             <h2 class="companyName">
-                Company Name
+                RealDOT
             </h2>
 
             <h2 class="welcomeHeade">
-                Welcome Back
+                Admin Login
             </h2>
 
             <form>
@@ -32,6 +32,11 @@
 </template>
 
 <script>
+
+import { mapActions,mapGetters } from 'vuex';
+
+import { backendURL } from '@/service/constants';
+
 export default {
     data: function(){
         return{
@@ -40,16 +45,33 @@ export default {
         }
     },
     methods:{
-        Login(){
+        ...mapActions,
+        async Login(){
             if(this.email==='' || this.password===''){
-                alert('hello login page');
-            }else{
-                const postData = {email: this.email, password: this.password}
-                this.$http.post("login", postData).then(res => {
-                    console.log(res.body)
-                });
+                alert('Please provide a username and password');
+                return;
+            }
+            const postData = {email: this.email, password: this.password}
+            const url =`${backendURL()}/users/authenticate`;
+            try {
+                let res = await this.$http.post(url, postData);
+                const user = res.body.data;
+                this.$store.dispatch('setUser', user);
+                this.$store.dispatch('setToken', user.token);
+
+                console.log(this.user);
+
+                this.$router.push({path:"/dashboard", replace: true});
+
+            }
+            catch(e) {
+                console.log(e);
+                alert("an error occurred");
             }
         }
+    },
+    computed:{
+        ...mapGetters({user:'getUser', token:'getToken'})
     }
 }
 </script>

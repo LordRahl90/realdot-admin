@@ -8,7 +8,10 @@ const routes = [
     {
         path: '/',
         name: 'login',
-        component: () => import('../components/LoginPage.vue')
+        component: () => import('../components/LoginPage.vue'),
+        meta:{
+          disallowAuthed: true
+        }
     },
     {
         path: '/forgetpassword',
@@ -28,49 +31,22 @@ const routes = [
           ],
     },
     {
-        path: '/listing',
-        redirect: '/listing/index',
-        name: 'Listing',
-        component: () => import('../components/DashboardPage.vue'),
-        children: [
-          {
-            path: "/listing/index",
-            component: () => import('../components/listing/ListingIndex.vue'),
-          },
-          {
-            path: '/listing/create',
-            component: () => import('../components/listing/ListingNew.vue')
-          },
-          {
-            path: '/listing/create/paymentplan',
-            component: () => import('../components/listing/ListingNewPaymentPlan.vue')
-          },
-          {
-            path: '/listing/create/upload',
-            component: () => import('../components/listing/ListingNewUpload.vue')
-          },
-          {
-            path: '/listing/view',
-            component: () => import('../components/listing/ListingNewView.vue')
-          },
-          {
-            path: '/listing/edit',
-            component: () => import('../components/listing/ListingEdit.vue')
-          },
-          {
-            path: '/listing/profile',
-            component: () => import('../components/listing/ListingProfile.vue')
-          },
-          {
-            path: '/listing/subscriber',
-            component: () => import('../components/listing/ListingCustomerPlan.vue')
-          },
-          {
-            path: '/listing/subscriber/paymentplan',
-            component: () => import('../components/listing/ListingCustomerPaymentDetails.vue')
-          }
-        ]
+      path: '/company',
+      redirect: '/company/index',
+      name: 'companies',
+      component: ()=>import('../components/DashboardPage.vue'),
+      children: [
+        {
+          path: '/company/index',
+          component: ()=>import('../components/company/CompanyList.vue')
+        },
+        {
+          path:"/company/create",
+          component: ()=>import('../components/company/NewCompany.vue')
+        }
+      ],
     },
+    
     {
         path: '/staff',
         redirect: '/staff/index',

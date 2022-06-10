@@ -1,10 +1,12 @@
 <template>
+<div class="flex">
+  <!-- <h1>Hello world</h1> -->
   <!-- Navbar -->
   <nav class="absolute top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-4">
     <div class="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4">
       <!-- Brand -->
       <a class="text-blueGray-300 text-sm hidden lg:inline-block font-semibold" href="javascript:void(0)">
-        Dashboard
+        Dashboards
       </a>
       <!-- Form -->
       <form class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
@@ -13,7 +15,7 @@
             <i class="fas fa-bell"></i>
           </span>
           <div class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-300 relative outline-none focus:outline-none focus:ring w-full pl-10">
-            Company Name
+            {{ user.first_name+" "+user.last_name }}
           </div>
         </div>
       </form>
@@ -24,14 +26,19 @@
     </div>
   </nav>
   <!-- End Navbar -->
+</div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";
 
 export default {
   components: {
     UserDropdown,
+  },
+  computed:{
+    ...mapGetters({user:'getUser', token:'getToken'})
   },
 };
 </script>
