@@ -99,7 +99,8 @@
                   color === 'light' ? 'text-blueGray-600' : 'text-white',
                 ]"
               >
-                {{ c.name }}
+              <router-link :to="'/company/details/'+c.id">{{ c.name }}</router-link>
+                
               </span>
             </th>
             <td
@@ -181,8 +182,6 @@ export default {
     catch(e){
       console.log(e);
     }
-
-    console.log("I don show");
   },
   methods:{
     ...mapActions,

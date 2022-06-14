@@ -43,6 +43,11 @@ const routes = [
         {
           path:"/company/create",
           component: ()=>import('../components/company/NewCompany.vue')
+        },
+        {
+          name: 'companyDetails',
+          path: "/company/details/:id",
+          component: ()=> import ('../components/company/CompanyDetails.vue')
         }
       ],
     },
@@ -60,6 +65,10 @@ const routes = [
           {
             path: '/staff/view',
             component: () => import('../components/staff/StaffView.vue')
+          },{
+            name: 'createStaff',
+            path: '/staff/create',
+            component: ()=>import('../components/staff/StaffCreate.vue')
           }
         ]
     },
