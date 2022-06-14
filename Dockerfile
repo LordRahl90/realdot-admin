@@ -6,7 +6,7 @@ COPY  ./ ./
 
 RUN npm install
 
-RUN npm run build
+RUN NODE_ENV=testing npm run build
 
 
 FROM httpd:alpine
