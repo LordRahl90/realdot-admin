@@ -39,7 +39,7 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v2
         with:
-          file: .docker/Dockerfile
+          file: ./Dockerfile
           push: true
           tags: lordrahl/realdot-admin:${{ steps.extract_branch.outputs.branch }}-${{ github.run_id }}-${{ github.run_number }}
 
