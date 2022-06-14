@@ -10,7 +10,7 @@ export const backendURL = ()=> {
             case "testing":
                 return "https://api.testing.realdot.ng";
             case "production":
-                return "https://api.realdot.ng";
+                return "https://api.testing.realdot.ng";
     }
     
 }
