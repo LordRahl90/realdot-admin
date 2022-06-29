@@ -1,10 +1,11 @@
+
 <template>
     <div id="app">
         <div class="loginContainer">
             <div class="sideLoginContainer">
-                <img class="sideImage" />
+                <img src='../assets/Frame 8.png' class="sideImage" />
             </div>
-
+                <div class="form-container">
             <h2 class="companyName">
                 RealDOT
             </h2>
@@ -24,9 +25,12 @@
                     <input type="password" placeholder="Enter Password" class="passwordField" v-model="password" />
                 </div>
 
-                <router-link to="/forgetpassword" class="forgetPasswordLink">forget passord?</router-link>
+               <div class="forgotPasswordContainer">
+                 <router-link to="/forgetpassword" class="forgetPasswordLink">forgot password?</router-link>
+                </div>
                 <input @click.prevent="Login()" class="loginButton" type="button" value="Login">
             </form>
+            </div>
         </div>
     </div>
 </template>

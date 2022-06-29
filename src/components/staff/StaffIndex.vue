@@ -1,11 +1,14 @@
 <template>
-  <div class="flex flex-wrap mt-4">
-    <div class="w-full mb-12 px-4">
+  <div class="block flex-wrap mb-200">
+    <div class="w-full mb-0 mt-10 px-4">
       <staff-table color="dark" :members="members" />
     </div>
   </div>
 </template>
+
 <script>
+
+
 import { backendURL } from "@/service/constants";
 import { mapGetters } from "vuex";
 import StaffTable from "@/components/Cards/StaffTable.vue";

@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import DashBoard from "@/components/view/DashBoard.vue";
+//import ChildDashboard from "../components/ChildDashboard.vue"
 
 Vue.use(VueRouter)
 
@@ -31,10 +32,11 @@ const routes = [
           ],
     },
     {
+
       path: '/company',
       redirect: '/company/index',
       name: 'companies',
-      component: ()=>import('../components/DashboardPage.vue'),
+      component: ()=>import('../components/ChildDashboard.vue'),
       children: [
         {
           path: '/company/index',
@@ -56,11 +58,11 @@ const routes = [
         path: '/staff',
         redirect: '/staff/index',
         name: 'staff',
-        component: () => import('../components/DashboardPage.vue'),
+        component: () => import('../components/ChildDashboard.vue'),
         children: [
           {
             path: '/staff/index',
-            component: () => import('../components/staff/StaffIndex.vue')
+           component: () => import('../components/staff/StaffIndex.vue')
           },
           {
             path: '/staff/view',
@@ -76,7 +78,7 @@ const routes = [
       path: '/setting',
       redirect: '/setting/index',
       name: 'setting',
-      component: () => import('../components/DashboardPage.vue'),
+      component: () => import('../components/ChildDashboard.vue'),
       children: [
         {
           path: '/setting/index',

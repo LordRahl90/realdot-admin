@@ -1,9 +1,9 @@
 <template>
   <div
-    class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded my-30 py-30"
+    class="relative flex flex-col min-w-0 break-words w-full mb-6 mt-10 shadow-lg rounded my-30 py-30 "
     :class="[color === 'light' ? 'bg-white' : 'bg-emerald-900 text-white']"
   >
-    <div class="rounded-t mb-0 px-4 py-300 border-0">
+    <div class="rounded-t mb-0 px-4 py-300 border-0 pt-10 pb-5">
       <div class="flex flex-wrap items-center">
         <div class="flex-initial flex-grow w-70">
             <h3 class="font-semibold text-lg" :class="[color === 'light' ? 'text-blueGray-700' : 'text-white']">
