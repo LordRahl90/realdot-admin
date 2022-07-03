@@ -6,11 +6,10 @@
       <header-stats  />
       <div class="px-20 md:px-10 mx-auto w-full -m-24">
         <router-view />
-        <footer-admin />
       </div>
+        <footer-admin />
     </div>
   </div>
-  
 </template>
 <script>
 // Seems I can use v-show to solve this problem I Can just get the this.$route.fullPath

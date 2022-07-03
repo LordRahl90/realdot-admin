@@ -3,7 +3,7 @@
     class="relative flex flex-col min-w-0 break-words w-full mb-6 mt-10 shadow-lg rounded my-30 py-30 "
     :class="[color === 'light' ? 'bg-white' : 'bg-emerald-900 text-white']"
   >
-    <div class="rounded-t mb-0 px-4 py-300 border-0 pt-10 pb-5">
+    <div class="rounded-t mb-0 p-2  py-300 border-0 pt-10 pb-5">
       <div class="flex flex-wrap items-center">
         <div class="flex-initial flex-grow w-70">
             <h3 class="font-semibold text-lg" :class="[color === 'light' ? 'text-blueGray-700' : 'text-white']">
@@ -11,7 +11,7 @@
           </h3>
         </div>
         <div class="flex flex-none w-30">
-          <router-link to="/company/create" class="bg-lightBlue-500 text-white py-2 px-4 rounded">
+          <router-link to="/company/create" class="create-btn text-white py-2 px-4 rounded">
             <i class="fas fa-add"></i>
             Create New
           </router-link>
@@ -135,7 +135,13 @@
     </div>
   </div>
 </template>
+<style scoped>
+.create-btn {
+  background-color: #360a3b;
+}
+</style>
 <script>
+
 // import TableDropdown from "@/components/Dropdowns/TableDropdown.vue";
 
 import bootstrap from "@/assets/img/bootstrap.jpg";

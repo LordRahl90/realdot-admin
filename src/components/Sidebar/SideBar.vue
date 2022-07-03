@@ -244,8 +244,11 @@
     </div>
   </nav>
 </template>
-); }
-
+<style>
+.nav-link {
+  background-color: #360a3b;
+}
+</style>
 <script>
 import NotificationDropdown from "@/components/Dropdowns/NotificationDropdown.vue";
 import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";
