@@ -15,9 +15,10 @@
       </button>
       <!-- Brand -->
       <router-link
-        class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
+        class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-0 px-0"
         to="/"
       >
+
         <img class="dashLogo" />
       </router-link>
       <!-- User -->
@@ -243,8 +244,11 @@
     </div>
   </nav>
 </template>
-); }
-
+<style>
+.nav-link {
+  background-color: #360a3b;
+}
+</style>
 <script>
 import NotificationDropdown from "@/components/Dropdowns/NotificationDropdown.vue";
 import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";

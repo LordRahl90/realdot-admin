@@ -1,35 +1,28 @@
 <template>
   <div>
     <Sidebar />
-    <div class="relative md:ml-64 bg-blueGray-100">
+    <div class="md:ml-64 bg-blueGray-100">
       <admin-navbar />
-      <header-stats  />
-      <div class="px-20 md:px-10 mx-auto w-full -m-24">
-        <router-view />
+     <div class="mx-auto px-20 md:px-10 w-full pt-0">
+      <router-view />
       </div>
-        <footer-admin />
+      <footer-admin />
     </div>
   </div>
 </template>
 <script>
-// Seems I can use v-show to solve this problem I Can just get the this.$route.fullPath
-
 import AdminNavbar from "@/components/Navbars/AdminNavbar.vue";
 import Sidebar from "@/components/Sidebar/SideBar.vue";
 import FooterAdmin from "@/components/Footers/FooterAdmin.vue";
 import { mapGetters } from 'vuex';
-import HeaderStats from './Headers/HeaderStats.vue';
+//import HeaderStats from './Headers/HeaderStats.vue';
 export default {
-  data() {
-    return {
-      id: this.$route
-    }
-  },
+  
   name: "admin-layout",
   components: {
     AdminNavbar,
     Sidebar,
-    HeaderStats,
+   // HeaderStats,
     FooterAdmin,
   },
   computed:{
