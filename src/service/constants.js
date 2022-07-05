@@ -4,7 +4,7 @@ export const backendURL = ()=> {
     console.log(process.env);
     switch (process.env.NODE_ENV) {
         case "development":
-            return "http://api.testing.realdot.ng";
+            return "https://api.testing.realdot.ng";
             case "staging":
                 return "https://api.staging.realdot.ng";
             case "testing":
